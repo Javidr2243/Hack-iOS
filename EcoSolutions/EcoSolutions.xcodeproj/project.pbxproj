@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C526F732B9D2B2300C53762 /* EcoSolutionsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */; };
+		3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F752B9D2B4100C53762 /* Helpers.swift */; };
+		3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F782B9D2B6F00C53762 /* UserViewModel.swift */; };
+		3C526F7B2B9D2B8300C53762 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F7A2B9D2B8300C53762 /* User.swift */; };
 		C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384967C2B9D297F0046A51B /* EcoSolutionsApp.swift */; };
 		C384967F2B9D297F0046A51B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384967E2B9D297F0046A51B /* ContentView.swift */; };
 		C38496812B9D29800046A51B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38496802B9D29800046A51B /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EcoSolutionsData.json; sourceTree = "<group>"; };
+		3C526F752B9D2B4100C53762 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		3C526F782B9D2B6F00C53762 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3C526F7A2B9D2B8300C53762 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C38496792B9D297F0046A51B /* EcoSolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoSolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C384967C2B9D297F0046A51B /* EcoSolutionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoSolutionsApp.swift; sourceTree = "<group>"; };
 		C384967E2B9D297F0046A51B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C526F702B9D2AFF00C53762 /* Foundation  */ = {
+			isa = PBXGroup;
+			children = (
+				3C526F772B9D2B4B00C53762 /* View Models */,
+				3C526F742B9D2B2E00C53762 /* Helpers */,
+				3C526F712B9D2B0600C53762 /* Data */,
+			);
+			path = "Foundation ";
+			sourceTree = "<group>";
+		};
+		3C526F712B9D2B0600C53762 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3C526F7A2B9D2B8300C53762 /* User.swift */,
+				3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3C526F742B9D2B2E00C53762 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C526F752B9D2B4100C53762 /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3C526F772B9D2B4B00C53762 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C526F782B9D2B6F00C53762 /* UserViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		C38496702B9D297F0046A51B = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +94,7 @@
 		C384967B2B9D297F0046A51B /* EcoSolutions */ = {
 			isa = PBXGroup;
 			children = (
+				3C526F702B9D2AFF00C53762 /* Foundation  */,
 				C384967C2B9D297F0046A51B /* EcoSolutionsApp.swift */,
 				C384967E2B9D297F0046A51B /* ContentView.swift */,
 				C38496802B9D29800046A51B /* Assets.xcassets */,
@@ -127,6 +171,7 @@
 			files = (
 				C38496842B9D29800046A51B /* Preview Assets.xcassets in Resources */,
 				C38496812B9D29800046A51B /* Assets.xcassets in Resources */,
+				3C526F732B9D2B2300C53762 /* EcoSolutionsData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C384967F2B9D297F0046A51B /* ContentView.swift in Sources */,
+				3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */,
+				3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */,
+				3C526F7B2B9D2B8300C53762 /* User.swift in Sources */,
 				C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,75 @@
+[
+    {
+        "name": "My Home",
+        "user": [
+            {
+            "id": 1,
+            "name": "John Doe",
+            "mail": "john@example.com",
+            "password": "hashedPassword",
+            "cars": [
+                {
+                "model": "Sedan",
+                "gasConsumption": 30.5,
+                "trips": [
+                    {
+                    "distance": 100.5,
+                    "duration": 120
+                    },
+                    {
+                    "distance": 75.2,
+                    "duration": 90
+                    }
+                ]
+                },
+                {
+                "model": "SUV",
+                "gasConsumption": 20.8,
+                "trips": [
+                    {
+                    "distance": 150.0,
+                    "duration": 180
+                    }
+                ]
+                }
+            ]
+            },
+            {
+            "id": 2,
+            "name": "Jane Doe",
+            "mail": "jane@example.com",
+            "password": "hashedPassword",
+            "cars": [
+                {
+                "model": "Hatchback",
+                "gasConsumption": 25.0,
+                "trips": []
+                }
+            ]
+            }
+        ],
+        "appliances": [
+            {
+            "category": "Kitchen",
+            "consumo": 150,
+            "name": "Refrigerator",
+            "quantity": 1,
+            "smart": true
+            },
+            {
+            "category": "Living Room",
+            "consumo": 100,
+            "name": "Smart TV",
+            "quantity": 2,
+            "smart": true
+            },
+            {
+            "category": "Bedroom",
+            "consumo": 75,
+            "name": "Lamp",
+            "quantity": 3,
+            "smart": false
+            }
+        ]
+    }
+]
