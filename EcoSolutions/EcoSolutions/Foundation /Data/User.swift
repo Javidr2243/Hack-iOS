@@ -27,6 +27,7 @@ struct Car: Codable {
 }
 
 struct Trips: Codable {
+    let id: Int
     let distance: Double
     let duration: Int
 }
