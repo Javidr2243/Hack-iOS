@@ -9,7 +9,6 @@
          "cars":[
             {
                "model":"Nissan Versa",
-               "year":2020,
                "gasConsumption":17.2,
                "trips":[
                   {
@@ -24,6 +23,29 @@
                   }
                ]
             }
+         ],
+         "appliances":[
+            {
+               "category":"Kitchen",
+               "consumo":150,
+               "name":"Refrigerator",
+               "quantity":1,
+               "smart":true
+            },
+            {
+               "category":"Living Room",
+               "consumo":100,
+               "name":"Smart TV",
+               "quantity":2,
+               "smart":true
+            },
+            {
+               "category":"Bedroom",
+               "consumo":75,
+               "name":"Lamp",
+               "quantity":3,
+               "smart":false
+            }
          ]
       },
       {
@@ -35,34 +57,25 @@
             {
                "model":"Hatchback",
                "gasConsumption":25.0,
-               "trips":[
-                  
-               ]
+               "trips":[]
+            }
+         ],
+         "appliances":[
+            {
+               "category":"Kitchen",
+               "consumo":120,
+               "name":"Microwave",
+               "quantity":1,
+               "smart":false
+            },
+            {
+               "category":"Living Room",
+               "consumo":80,
+               "name":"Sound System",
+               "quantity":1,
+               "smart":true
             }
          ]
-      }
-   ],
-   "appliances":[
-      {
-         "category":"Kitchen",
-         "consumo":150,
-         "name":"Refrigerator",
-         "quantity":1,
-         "smart":true
-      },
-      {
-         "category":"Living Room",
-         "consumo":100,
-         "name":"Smart TV",
-         "quantity":2,
-         "smart":true
-      },
-      {
-         "category":"Bedroom",
-         "consumo":75,
-         "name":"Lamp",
-         "quantity":3,
-         "smart":false
       }
    ]
 }
