@@ -13,23 +13,41 @@ struct ContentView: View {
             HeaderView(headerTittle: "Bienvenido Sebastian")
             
             TabView {
-                HomeView()
+                HomeView(
+                    applianceList: [
+                        ItemCategory(
+                            id: "Cocina",
+                            items: [
+                                Item(consumo: 10.0, name: "Estufa", iconName: "stove", quantity: 2, smart: true),
+                                Item(consumo: 15.0, name: "Licuadora", iconName: "eraser", quantity: 1, smart: false)
+                            ]
+                        ),
+                        ItemCategory(
+                            id: "Aseo",
+                            items: [
+                                Item(consumo: 8.0, name: "Aspiradora", iconName: "stove", quantity: 1, smart: true),
+                                Item(consumo: 12.0, name: "Lavadora", iconName: "eraser", quantity: 2, smart: false)
+                            ]
+                        ),
+                        // Add more categories as needed
+                    ]
+                )
                     .tabItem {
                         Label("Home", systemImage: "powerplug")
                     }
-                HomeView()
+                MapView()
                     .tabItem {
                         Label("Car", systemImage: "car.side")
                     }
-                HomeView()
+                MapView()
                     .tabItem {
                         Label("Main Menu", systemImage: "house")
                     }
-                HomeView()
+                MapView()
                     .tabItem {
                         Label("Achievements", systemImage: "trophy")
                     }
-                HomeView()
+                MapView()
                     .tabItem {
                         Label("Profile", systemImage: "person")
                     }

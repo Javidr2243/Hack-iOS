@@ -38,13 +38,18 @@ struct Home: Codable {
     var appliances: [Item]
 }
 
+// Switching to ItemCategory & Item
+struct ItemCategory: Codable, Identifiable {
+    let id: String
+    var items: [Item]
+}
 
 struct Item: Codable {
     // Variables inmutables
-    let category: String
-    let consumo: Int
+    let consumo: Float // Refactor latter, this propérty corresponds to Kwh
     
-    var name: String
+    var name, iconName: String
+    
     var quantity: Int
     var smart: Bool
 }

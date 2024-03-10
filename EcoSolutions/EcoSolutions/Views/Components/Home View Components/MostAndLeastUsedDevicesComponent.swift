@@ -24,13 +24,18 @@ struct MostAndLeastUsedDevicesComponent: View {
                     Spacer()
                     
                     ZStack {
-                        Text("34.65 kg")
-                            .foregroundStyle(.red)
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundStyle(.white)
+                            .frame(width: 115, height: 30)
                         
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundStyle(.red)
                             .opacity(0.3)
                             .frame(width: 115, height: 30)
+                        
+                        Text("34.65 kg")
+                            .foregroundStyle(.red)
+                        
                     }
                 }
             }
@@ -50,13 +55,17 @@ struct MostAndLeastUsedDevicesComponent: View {
                     Spacer()
                     
                     ZStack {
-                        Text("34.65 kg")
-                            .foregroundStyle(Color("castleton-green"))
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundStyle(.white)
+                            .frame(width: 115, height: 30)
                         
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundStyle(Color("pear"))
                             .opacity(0.3)
                             .frame(width: 115, height: 30)
+                        
+                        Text("34.65 kg")
+                            .foregroundStyle(Color("castleton-green"))
                     }
                 }
             }
