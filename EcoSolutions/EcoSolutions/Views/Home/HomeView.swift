@@ -8,37 +8,42 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject var emissionsViewModel: EmissionsViewModel = .preview
+   
     var applianceList: [ItemCategory]
     var body: some View {
-        ScrollView {
-            VStack {
-                // Place Holder
-                ZStack {
-                    Rectangle()
-                        .foregroundStyle(Color("pear"))
-                        .frame(width: 390, height:340)
-                    Text("Graph ")
-                        .scaleEffect(2)
-                }
-                
-                // Most and Least Used device
-                MostAndLeastUsedDevicesComponent()
-                
-                ZStack {
-                    Rectangle()
-                        .foregroundStyle(Color("pear"))
-          
-                    VStack(alignment: .leading) {
-                        Text("Descubre como reducir tu uso de aire acondicionado con los siguientes pasos")
+        NavigationStack{
+            ScrollView {
+                VStack {
+                    // Place Holder
+                    NavigationLink{
+                        CO2EmissionsView(emissionsViewModel: emissionsViewModel)
+                    } label: {
+                        SimpleCO2EmissionsView(emissionsViewModel: emissionsViewModel)
+                            .padding()
                     }
-                    .padding()
-                   
+                    
+                    
+                    // Most and Least Used device
+                    MostAndLeastUsedDevicesComponent()
+                    
+                    ZStack {
+                        Rectangle()
+                            .foregroundStyle(Color("pear"))
+                        
+                        VStack(alignment: .leading) {
+                            Text("Descubre como reducir tu uso de aire acondicionado con los siguientes pasos")
+                        }
+                        .padding()
+                        
+                    }
+                    
+                    ForEach(applianceList) {item in
+                        ApplianceSummaryComponent(applianceList: item)
+                    }
+                    
                 }
-                
-                ForEach(applianceList) {item in
-                    ApplianceSummaryComponent(applianceList: item)
-                }
-                
             }
         }
     }
