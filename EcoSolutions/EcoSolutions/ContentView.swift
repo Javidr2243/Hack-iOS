@@ -62,7 +62,7 @@ struct ContentView: View {
                     }
                     .tag(1)
                 
-                MapView()
+                MainMenu()
                     .tabItem {
                         Label("Main Menu", systemImage: "house")
                     }

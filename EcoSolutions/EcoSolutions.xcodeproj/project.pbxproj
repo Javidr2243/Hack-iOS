@@ -12,6 +12,9 @@
 		3C1F8A3D2B9DB5AF00DE0B86 /* SingleCarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A3A2B9DB5AF00DE0B86 /* SingleCarComponent.swift */; };
 		3C1F8A3E2B9DB5AF00DE0B86 /* TripRegisterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A3B2B9DB5AF00DE0B86 /* TripRegisterComponent.swift */; };
 		3C1F8A3F2B9DB5AF00DE0B86 /* CarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A3C2B9DB5AF00DE0B86 /* CarComponent.swift */; };
+		3C1F8A422B9DB97200DE0B86 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A412B9DB97200DE0B86 /* MainMenu.swift */; };
+		3C1F8A442B9DB99600DE0B86 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A432B9DB99600DE0B86 /* UserProfile.swift */; };
+		3C1F8A482B9DBC1D00DE0B86 /* LoadingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A472B9DBC1D00DE0B86 /* LoadingPage.swift */; };
 		3C526F732B9D2B2300C53762 /* EcoSolutionsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */; };
 		3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F752B9D2B4100C53762 /* Helpers.swift */; };
 		3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F782B9D2B6F00C53762 /* UserViewModel.swift */; };
@@ -41,9 +44,12 @@
 /* Begin PBXFileReference section */
 		3C1F8A362B9DABF600DE0B86 /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
 		3C1F8A382B9DB58600DE0B86 /* CarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
-		3C1F8A3A2B9DB5AF00DE0B86 /* SingleCarComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleCarComponent.swift; path = "Home View Components/SingleCarComponent.swift"; sourceTree = "<group>"; };
-		3C1F8A3B2B9DB5AF00DE0B86 /* TripRegisterComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripRegisterComponent.swift; path = "Home View Components/TripRegisterComponent.swift"; sourceTree = "<group>"; };
-		3C1F8A3C2B9DB5AF00DE0B86 /* CarComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarComponent.swift; path = "Home View Components/CarComponent.swift"; sourceTree = "<group>"; };
+		3C1F8A3A2B9DB5AF00DE0B86 /* SingleCarComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCarComponent.swift; sourceTree = "<group>"; };
+		3C1F8A3B2B9DB5AF00DE0B86 /* TripRegisterComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripRegisterComponent.swift; sourceTree = "<group>"; };
+		3C1F8A3C2B9DB5AF00DE0B86 /* CarComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarComponent.swift; sourceTree = "<group>"; };
+		3C1F8A412B9DB97200DE0B86 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		3C1F8A432B9DB99600DE0B86 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		3C1F8A472B9DBC1D00DE0B86 /* LoadingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPage.swift; sourceTree = "<group>"; };
 		3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EcoSolutionsData.json; sourceTree = "<group>"; };
 		3C526F752B9D2B4100C53762 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3C526F782B9D2B6F00C53762 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -82,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C1F8A402B9DB90000DE0B86 /* Car Components */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F8A3C2B9DB5AF00DE0B86 /* CarComponent.swift */,
+				3C1F8A3A2B9DB5AF00DE0B86 /* SingleCarComponent.swift */,
+				3C1F8A3B2B9DB5AF00DE0B86 /* TripRegisterComponent.swift */,
+			);
+			path = "Car Components";
+			sourceTree = "<group>";
+		};
 		3C526F702B9D2AFF00C53762 /* Foundation  */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,25 +139,26 @@
 		3C526F7E2B9D339300C53762 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C1F8A412B9DB97200DE0B86 /* MainMenu.swift */,
+				3C1F8A432B9DB99600DE0B86 /* UserProfile.swift */,
 				3C526FA52B9D944E00C53762 /* Leaderboard */,
 				3C526FA22B9D935C00C53762 /* Home */,
-				3C526F862B9D4D7000C53762 /* Components */,
+				3C526F862B9D4D7000C53762 /* Car */,
 				3C526F9A2B9D76D600C53762 /* Graphs */,
 				3C526F7C2B9D309500C53762 /* MapView.swift */,
-				3C1F8A382B9DB58600DE0B86 /* CarView.swift */,
+				3C1F8A472B9DBC1D00DE0B86 /* LoadingPage.swift */,
 				3C526F7F2B9D3C9E00C53762 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		3C526F862B9D4D7000C53762 /* Components */ = {
+		3C526F862B9D4D7000C53762 /* Car */ = {
 			isa = PBXGroup;
 			children = (
-				3C1F8A3C2B9DB5AF00DE0B86 /* CarComponent.swift */,
-				3C1F8A3A2B9DB5AF00DE0B86 /* SingleCarComponent.swift */,
-				3C1F8A3B2B9DB5AF00DE0B86 /* TripRegisterComponent.swift */,
+				3C1F8A402B9DB90000DE0B86 /* Car Components */,
+				3C1F8A382B9DB58600DE0B86 /* CarView.swift */,
 			);
-			path = Components;
+			path = Car;
 			sourceTree = "<group>";
 		};
 		3C526F8F2B9D5A4700C53762 /* Home View Components */ = {
@@ -317,9 +334,11 @@
 				3C526F7B2B9D2B8300C53762 /* User.swift in Sources */,
 				3C1F8A3F2B9DB5AF00DE0B86 /* CarComponent.swift in Sources */,
 				3C526F842B9D487200C53762 /* HomeView.swift in Sources */,
+				3C1F8A442B9DB99600DE0B86 /* UserProfile.swift in Sources */,
 				3C1F8A3D2B9DB5AF00DE0B86 /* SingleCarComponent.swift in Sources */,
 				3C526F952B9D768700C53762 /* GraphView.swift in Sources */,
 				C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */,
+				3C1F8A422B9DB97200DE0B86 /* MainMenu.swift in Sources */,
 				3C526F9F2B9D8A6000C53762 /* PodiumPlaceHolder.swift in Sources */,
 				3C526F912B9D762900C53762 /* EmissionViewModel.swift in Sources */,
 				3C526F802B9D3C9E00C53762 /* HeaderView.swift in Sources */,
@@ -327,6 +346,7 @@
 				3C1F8A372B9DABF600DE0B86 /* FriendRow.swift in Sources */,
 				3C1F8A392B9DB58600DE0B86 /* CarView.swift in Sources */,
 				3C526F992B9D76C200C53762 /* DailyChartView.swift in Sources */,
+				3C1F8A482B9DBC1D00DE0B86 /* LoadingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
