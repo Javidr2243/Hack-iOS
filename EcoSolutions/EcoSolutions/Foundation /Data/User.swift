@@ -17,6 +17,7 @@ struct User: Codable {
     let name: String
     let mail: String
     let password: String
+    // Computed proferty for carbon footprint
     var cars: [Car] // Cambiado a un array para permitir múltiples coches.
 }
 
