@@ -41,7 +41,7 @@ struct DailyEmissionsChartView: View {
                     y: .value("Threshold", threshold)
                 )
                 .foregroundStyle(.red) // Cambia el color de la línea aquí si lo deseas
-                .lineStyle(StrokeStyle(lineWidth: 4)) // Aumenta el grosor de la línea
+                .lineStyle(StrokeStyle(lineWidth: 2)) // Aumenta el grosor de la línea
                 .annotation(position: .top, alignment: .trailing) {
                     Text("Umbral: \(threshold, specifier: "%.1f")")
                         .bold()

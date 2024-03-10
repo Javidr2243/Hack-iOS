@@ -19,14 +19,13 @@ struct SimpleCO2EmissionsView: View {
                     Image(systemName: isPositiveChange ? "arrow.up.right" : "arrow.down.right").bold()
                         .foregroundColor(isPositiveChange ? .red : .green)
                     
-                    Text("Your CO2 emissions ") +
+                    Text("Tus emisiones de CO2 ") +
                     Text(changedEmissions)
                         .bold() +
-                    Text(" in the last 30 days.")
+                    Text(" en los últimos 30 días.")
                 }
             }
             
-            // Ajustando la altura del gráfico a 340 píxeles
             Chart {
                 ForEach(emissionsViewModel.emissionsByWeek, id: \.week) { data in
                     BarMark(
@@ -35,9 +34,7 @@ struct SimpleCO2EmissionsView: View {
                     )
                 }
             }
-            .frame(height: 340) // Aquí establecemos la altura a 340 píxeles
-            .chartYAxis(.hidden)
-            .chartXAxis(.hidden)
+            .frame(height: 300)
         }
     }
     
@@ -51,7 +48,7 @@ struct SimpleCO2EmissionsView: View {
             return nil
         }
         
-        let changedDescription = percentageChange < 0 ? "decreased by " : "increased by "
+        let changedDescription = percentageChange < 0 ? "disminuyeron por " : "aumentaron por "
         
         return changedDescription + formattedPercentage
     }

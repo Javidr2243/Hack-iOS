@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C1F8A372B9DABF600DE0B86 /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A362B9DABF600DE0B86 /* FriendRow.swift */; };
 		3C526F732B9D2B2300C53762 /* EcoSolutionsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */; };
 		3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F752B9D2B4100C53762 /* Helpers.swift */; };
 		3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F782B9D2B6F00C53762 /* UserViewModel.swift */; };
@@ -23,19 +22,17 @@
 		3C526F952B9D768700C53762 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F942B9D768700C53762 /* GraphView.swift */; };
 		3C526F972B9D769800C53762 /* SimpleC02EmissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F962B9D769800C53762 /* SimpleC02EmissionsView.swift */; };
 		3C526F992B9D76C200C53762 /* DailyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F982B9D76C200C53762 /* DailyChartView.swift */; };
-		3C526F9C2B9D888300C53762 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F9B2B9D888300C53762 /* LeaderBoardView.swift */; };
-		3C526F9F2B9D8A6000C53762 /* PodiumPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F9E2B9D8A6000C53762 /* PodiumPlaceHolder.swift */; };
-		3C526FA12B9D90C000C53762 /* PodiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526FA02B9D90C000C53762 /* PodiumView.swift */; };
-		3C526FA72B9D96A200C53762 /* Podium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526FA62B9D96A200C53762 /* Podium.swift */; };
-		3C526FA92B9D992F00C53762 /* LeaderBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526FA82B9D992F00C53762 /* LeaderBoardRow.swift */; };
 		C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384967C2B9D297F0046A51B /* EcoSolutionsApp.swift */; };
 		C384967F2B9D297F0046A51B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384967E2B9D297F0046A51B /* ContentView.swift */; };
 		C38496812B9D29800046A51B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38496802B9D29800046A51B /* Assets.xcassets */; };
 		C38496842B9D29800046A51B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38496832B9D29800046A51B /* Preview Assets.xcassets */; };
+		C3C8C9342B9D9AC90041BD6C /* CarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9332B9D9AC90041BD6C /* CarComponent.swift */; };
+		C3C8C9362B9D9EAB0041BD6C /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9352B9D9EAB0041BD6C /* CarView.swift */; };
+		C3C8C9382B9DAA440041BD6C /* SingleCarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9372B9DAA440041BD6C /* SingleCarComponent.swift */; };
+		C3C8C93A2B9DAD9E0041BD6C /* TripRegisterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9392B9DAD9E0041BD6C /* TripRegisterComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C1F8A362B9DABF600DE0B86 /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
 		3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EcoSolutionsData.json; sourceTree = "<group>"; };
 		3C526F752B9D2B4100C53762 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3C526F782B9D2B6F00C53762 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -51,16 +48,15 @@
 		3C526F942B9D768700C53762 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		3C526F962B9D769800C53762 /* SimpleC02EmissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleC02EmissionsView.swift; sourceTree = "<group>"; };
 		3C526F982B9D76C200C53762 /* DailyChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyChartView.swift; sourceTree = "<group>"; };
-		3C526F9B2B9D888300C53762 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
-		3C526F9E2B9D8A6000C53762 /* PodiumPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodiumPlaceHolder.swift; sourceTree = "<group>"; };
-		3C526FA02B9D90C000C53762 /* PodiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodiumView.swift; sourceTree = "<group>"; };
-		3C526FA62B9D96A200C53762 /* Podium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podium.swift; sourceTree = "<group>"; };
-		3C526FA82B9D992F00C53762 /* LeaderBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRow.swift; sourceTree = "<group>"; };
 		C38496792B9D297F0046A51B /* EcoSolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoSolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C384967C2B9D297F0046A51B /* EcoSolutionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoSolutionsApp.swift; sourceTree = "<group>"; };
 		C384967E2B9D297F0046A51B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C38496802B9D29800046A51B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38496832B9D29800046A51B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3C8C9332B9D9AC90041BD6C /* CarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarComponent.swift; sourceTree = "<group>"; };
+		C3C8C9352B9D9EAB0041BD6C /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		C3C8C9372B9DAA440041BD6C /* SingleCarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCarComponent.swift; sourceTree = "<group>"; };
+		C3C8C9392B9DAD9E0041BD6C /* TripRegisterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRegisterComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +83,6 @@
 		3C526F712B9D2B0600C53762 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3C526FA62B9D96A200C53762 /* Podium.swift */,
 				3C526F922B9D767100C53762 /* Emissions.swift */,
 				3C526F7A2B9D2B8300C53762 /* User.swift */,
 				3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */,
@@ -115,12 +110,12 @@
 		3C526F7E2B9D339300C53762 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3C526FA52B9D944E00C53762 /* Leaderboard */,
-				3C526FA22B9D935C00C53762 /* Home */,
 				3C526F862B9D4D7000C53762 /* Components */,
-				3C526F9A2B9D76D600C53762 /* Graphs */,
 				3C526F7C2B9D309500C53762 /* MapView.swift */,
+				3C526F9A2B9D76D600C53762 /* Graphs */,
 				3C526F7F2B9D3C9E00C53762 /* HeaderView.swift */,
+				3C526F832B9D487200C53762 /* HomeView.swift */,
+				C3C8C9352B9D9EAB0041BD6C /* CarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +123,7 @@
 		3C526F862B9D4D7000C53762 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3C526F8F2B9D5A4700C53762 /* Home View Components */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -138,6 +134,9 @@
 				3C526F892B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift */,
 				3C526F8B2B9D4E4200C53762 /* ApplianceSummaryComponent.swift */,
 				3C526F8D2B9D5A3800C53762 /* ApplianceRow.swift */,
+				C3C8C9332B9D9AC90041BD6C /* CarComponent.swift */,
+				C3C8C9372B9DAA440041BD6C /* SingleCarComponent.swift */,
+				C3C8C9392B9DAD9E0041BD6C /* TripRegisterComponent.swift */,
 			);
 			path = "Home View Components";
 			sourceTree = "<group>";
@@ -150,35 +149,6 @@
 				3C526F962B9D769800C53762 /* SimpleC02EmissionsView.swift */,
 			);
 			path = Graphs;
-			sourceTree = "<group>";
-		};
-		3C526F9D2B9D8A2600C53762 /* Leaderboard Components */ = {
-			isa = PBXGroup;
-			children = (
-				3C526F9E2B9D8A6000C53762 /* PodiumPlaceHolder.swift */,
-				3C526FA82B9D992F00C53762 /* LeaderBoardRow.swift */,
-				3C1F8A362B9DABF600DE0B86 /* FriendRow.swift */,
-			);
-			path = "Leaderboard Components";
-			sourceTree = "<group>";
-		};
-		3C526FA22B9D935C00C53762 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				3C526F8F2B9D5A4700C53762 /* Home View Components */,
-				3C526F832B9D487200C53762 /* HomeView.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		3C526FA52B9D944E00C53762 /* Leaderboard */ = {
-			isa = PBXGroup;
-			children = (
-				3C526F9D2B9D8A2600C53762 /* Leaderboard Components */,
-				3C526F9B2B9D888300C53762 /* LeaderBoardView.swift */,
-				3C526FA02B9D90C000C53762 /* PodiumView.swift */,
-			);
-			path = Leaderboard;
 			sourceTree = "<group>";
 		};
 		C38496702B9D297F0046A51B = {
@@ -289,28 +259,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C526FA12B9D90C000C53762 /* PodiumView.swift in Sources */,
+				C3C8C9342B9D9AC90041BD6C /* CarComponent.swift in Sources */,
 				3C526F8C2B9D4E4200C53762 /* ApplianceSummaryComponent.swift in Sources */,
 				C384967F2B9D297F0046A51B /* ContentView.swift in Sources */,
 				3C526F8E2B9D5A3800C53762 /* ApplianceRow.swift in Sources */,
-				3C526F9C2B9D888300C53762 /* LeaderBoardView.swift in Sources */,
 				3C526F7D2B9D309500C53762 /* MapView.swift in Sources */,
 				3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */,
 				3C526F932B9D767100C53762 /* Emissions.swift in Sources */,
 				3C526F972B9D769800C53762 /* SimpleC02EmissionsView.swift in Sources */,
-				3C526FA72B9D96A200C53762 /* Podium.swift in Sources */,
-				3C526FA92B9D992F00C53762 /* LeaderBoardRow.swift in Sources */,
 				3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */,
 				3C526F7B2B9D2B8300C53762 /* User.swift in Sources */,
 				3C526F842B9D487200C53762 /* HomeView.swift in Sources */,
 				3C526F952B9D768700C53762 /* GraphView.swift in Sources */,
 				C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */,
-				3C526F9F2B9D8A6000C53762 /* PodiumPlaceHolder.swift in Sources */,
+				C3C8C93A2B9DAD9E0041BD6C /* TripRegisterComponent.swift in Sources */,
 				3C526F912B9D762900C53762 /* EmissionViewModel.swift in Sources */,
 				3C526F802B9D3C9E00C53762 /* HeaderView.swift in Sources */,
+				C3C8C9382B9DAA440041BD6C /* SingleCarComponent.swift in Sources */,
 				3C526F8A2B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift in Sources */,
-				3C1F8A372B9DABF600DE0B86 /* FriendRow.swift in Sources */,
 				3C526F992B9D76C200C53762 /* DailyChartView.swift in Sources */,
+				C3C8C9362B9D9EAB0041BD6C /* CarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
