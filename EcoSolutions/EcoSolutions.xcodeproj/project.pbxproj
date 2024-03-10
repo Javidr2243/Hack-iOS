@@ -16,6 +16,11 @@
 		C384967F2B9D297F0046A51B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384967E2B9D297F0046A51B /* ContentView.swift */; };
 		C38496812B9D29800046A51B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38496802B9D29800046A51B /* Assets.xcassets */; };
 		C38496842B9D29800046A51B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38496832B9D29800046A51B /* Preview Assets.xcassets */; };
+		C384968B2B9D41C80046A51B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384968A2B9D41C80046A51B /* GraphView.swift */; };
+		C384968D2B9D44420046A51B /* Emissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384968C2B9D44420046A51B /* Emissions.swift */; };
+		C384968F2B9D44DF0046A51B /* EmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384968E2B9D44DF0046A51B /* EmissionViewModel.swift */; };
+		C38496912B9D4BB70046A51B /* SimpleC02EmissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38496902B9D4BB70046A51B /* SimpleC02EmissionsView.swift */; };
+		C38496932B9D4F6C0046A51B /* DailyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38496922B9D4F6C0046A51B /* DailyChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		C384967E2B9D297F0046A51B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C38496802B9D29800046A51B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38496832B9D29800046A51B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C384968A2B9D41C80046A51B /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		C384968C2B9D44420046A51B /* Emissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emissions.swift; sourceTree = "<group>"; };
+		C384968E2B9D44DF0046A51B /* EmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmissionViewModel.swift; sourceTree = "<group>"; };
+		C38496902B9D4BB70046A51B /* SimpleC02EmissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleC02EmissionsView.swift; sourceTree = "<group>"; };
+		C38496922B9D4F6C0046A51B /* DailyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 			children = (
 				3C526F7A2B9D2B8300C53762 /* User.swift */,
 				3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */,
+				C384968C2B9D44420046A51B /* Emissions.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -73,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3C526F782B9D2B6F00C53762 /* UserViewModel.swift */,
+				C384968E2B9D44DF0046A51B /* EmissionViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -81,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				3C526F7C2B9D309500C53762 /* MapView.swift */,
+				C384968A2B9D41C80046A51B /* GraphView.swift */,
+				C38496902B9D4BB70046A51B /* SimpleC02EmissionsView.swift */,
+				C38496922B9D4F6C0046A51B /* DailyChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,8 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C384967F2B9D297F0046A51B /* ContentView.swift in Sources */,
+				C38496932B9D4F6C0046A51B /* DailyChartView.swift in Sources */,
+				C38496912B9D4BB70046A51B /* SimpleC02EmissionsView.swift in Sources */,
 				3C526F7D2B9D309500C53762 /* MapView.swift in Sources */,
+				C384968B2B9D41C80046A51B /* GraphView.swift in Sources */,
+				C384968F2B9D44DF0046A51B /* EmissionViewModel.swift in Sources */,
 				3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */,
+				C384968D2B9D44420046A51B /* Emissions.swift in Sources */,
 				3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */,
 				3C526F7B2B9D2B8300C53762 /* User.swift in Sources */,
 				C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */,
