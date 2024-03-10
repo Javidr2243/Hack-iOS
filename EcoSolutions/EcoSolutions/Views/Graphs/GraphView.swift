@@ -19,8 +19,8 @@ struct CO2EmissionsView: View {
 
     @ObservedObject var emissionsViewModel: EmissionsViewModel
     @State private var selectedTimeframe = Timeframe.weekly
-    let thresholdWeekly: Double = 200.0 // Define el umbral para el gráfico semanal
-    let thresholdMonthly: Double = 800.0 // Define el umbral para el gráfico mensual
+    let thresholdWeekly: Double = 50.0 // Define el umbral para el gráfico semanal
+    let thresholdMonthly: Double = 140.0 // Define el umbral para el gráfico mensual
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -40,7 +40,7 @@ struct CO2EmissionsView: View {
             if #available(macOS 14.0, *) {
                 switch selectedTimeframe {
                 case .daily:
-                    DailyEmissionsChartView(emissionsData: emissionsViewModel.emissionsData, threshold: 50.0)
+                    DailyEmissionsChartView(emissionsData: emissionsViewModel.emissionsData, threshold: 7.0)
                 case .weekly:
                     Chart {
                         ForEach(emissionsViewModel.emissionsByWeek, id: \.week) { data in

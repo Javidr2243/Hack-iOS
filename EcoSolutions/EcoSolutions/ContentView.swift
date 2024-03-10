@@ -40,7 +40,7 @@ struct ContentView: View {
                         ]
                     )
                         .tabItem {
-                            Label("Home", systemImage: "powerplug")
+                            Label("Hogar", systemImage: "powerplug")
                         }
                         .tag(0)
                     
@@ -61,19 +61,19 @@ struct ContentView: View {
                         ),
                     ])
                         .tabItem {
-                            Label("Car", systemImage: "car.side")
+                            Label("Vehiculo", systemImage: "car.side")
                         }
                         .tag(1)
                     
                     MainMenu()
                         .tabItem {
-                            Label("Main Menu", systemImage: "house")
+                            Label("Menu", systemImage: "house")
                         }
                         .tag(2)
                     
                     LeaderBoardView()
                         .tabItem {
-                            Label("Leader Board", systemImage: "trophy")
+                            Label("Tabla de Puntaje", systemImage: "trophy")
                         }
                         .tag(3)
                     
@@ -84,7 +84,7 @@ struct ContentView: View {
                         Milestone(id: "There's only one solution for polution", isCompleted: true)
                     ])
                         .tabItem {
-                            Label("Profile", systemImage: "person")
+                            Label("Perfil", systemImage: "person")
                         }
                         .tag(4)
                 }

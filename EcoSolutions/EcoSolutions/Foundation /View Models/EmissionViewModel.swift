@@ -51,11 +51,11 @@ class EmissionsViewModel: ObservableObject {
     
     static var preview: EmissionsViewModel {
         let lastMonthEmissions = (1...30).map { day in
-            Emission(id: UUID(), date: Date().addingTimeInterval(-Double(day) * 86400), amount: Double.random(in: 50...100))
+            Emission(id: UUID(), date: Date().addingTimeInterval(-Double(day) * 86400), amount: Double.random(in: 5...17))
         }
         
         let previousMonthEmissions = (1...30).map { day in
-            Emission(id: UUID(), date: Date().addingTimeInterval(-Double(day) * 86400 - 30*86400), amount: Double.random(in: 50...100))
+            Emission(id: UUID(), date: Date().addingTimeInterval(-Double(day) * 86400 - 30*86400), amount: Double.random(in: 5...17))
         }
         
         return EmissionsViewModel(emissionsData: lastMonthEmissions + previousMonthEmissions)

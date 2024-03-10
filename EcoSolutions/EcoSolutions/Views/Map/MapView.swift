@@ -52,37 +52,32 @@ struct MapView: View {
     }
     
     var body: some View {
-        VStack {
-            TextField("Buscar", text: $searchText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
-            Map(selection: $selectedResult) {
-                Marker("Start", coordinate: self.startingPoint)
-                if let route = route {
-                    MapPolyline(route)
-                        .stroke(.blue, lineWidth: 5)
-                }
-            }
-            
-            HStack {
-                if let travelTime = travelTime {
-                    Text("Tiempo: \(travelTime)")
-                        .padding()
-                }
+            ZStack {
+                TextField("Buscar", text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
                 
-                if let travelDistance = travelDistance {
-                    Text("Distancia: \(travelDistance)")
-                        .padding()
+                Map(selection: $selectedResult) {
+                    Marker("Start", coordinate: self.startingPoint)
+                    if let route = route {
+                        MapPolyline(route)
+                            .stroke(.blue, lineWidth: 5)
+                    }
+                }
+                VStack {
+                    Spacer()
+                    if let travelTime = travelTime, let travelDistance = travelDistance {
+                        MapDataView(time: travelTime, distance: travelDistance)
+                            .padding(.bottom,60)
+                            .scaleEffect(1.2)
+                    }
                 }
             }
-            Text("Emisión estimada de Co2: 0.8kg ")
-        }
-        .onChange(of: selectedResult) {
-            getDirections()
-        }
-        .onAppear {
-            self.selectedResult = MKMapItem(placemark: MKPlacemark(coordinate: self.destinationCoordinates))
+            .onChange(of: selectedResult) {
+                getDirections()
+            }
+            .onAppear {
+                self.selectedResult = MKMapItem(placemark: MKPlacemark(coordinate: self.destinationCoordinates))
         }
     }
     

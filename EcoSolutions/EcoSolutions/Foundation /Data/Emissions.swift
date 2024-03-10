@@ -14,8 +14,8 @@ struct Emission: Identifiable, Equatable {
     
     // Generar ejemplos de emisiones
     static var examples: [Emission] {
-        (1...10).map { item in
-            Emission(id: UUID(), date: Date().addingTimeInterval(-86400 * Double(item)), amount: Double.random(in: 1...100))
+        (1...1000).map { item in
+            Emission(id: UUID(), date: Date().addingTimeInterval(-86400 * Double(item)), amount: Double.random(in: 0...17))
         }
     }
 }
