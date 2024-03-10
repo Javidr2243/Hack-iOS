@@ -12,3 +12,8 @@ enum Position {
     case second
     case third
 }
+
+struct Milestone: Identifiable {
+    let id: String
+    var isCompleted: Bool
+}

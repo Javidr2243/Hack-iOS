@@ -77,14 +77,22 @@ struct ContentView: View {
                         }
                         .tag(3)
                     
-                    MapView()
+                    UserProfile(milestoneList: [
+                        Milestone(id: "20 Carpools", isCompleted: true),
+                        Milestone(id: "Reduccion de tu huella en un 50%", isCompleted: false),
+                        Milestone(id: "Reduccion del uso de luz en 15%", isCompleted: false),
+                        Milestone(id: "There's only one solution for polution", isCompleted: true)
+                    ])
                         .tabItem {
                             Label("Profile", systemImage: "person")
                         }
                         .tag(4)
                 }
                 .background(Color("white-dark"))
+                
+                
                 Spacer()
+                
             }
             
             LoadingPage(isLoading: $isLoading).onAppear {

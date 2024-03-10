@@ -49,7 +49,11 @@ struct CarView: View {
                             .padding()
                         }
                     }
-                    TripRegisterComponent()
+                    NavigationLink{
+                        MapView()
+                    } label:{
+                        TripRegisterComponent()
+                    }
                     SingleCarComponent()
                     }
                 }
