@@ -16,6 +16,7 @@
 		3C1F8A442B9DB99600DE0B86 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A432B9DB99600DE0B86 /* UserProfile.swift */; };
 		3C1F8A482B9DBC1D00DE0B86 /* LoadingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A472B9DBC1D00DE0B86 /* LoadingPage.swift */; };
 		3C1F8A4A2B9DD91D00DE0B86 /* MilestoneRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A492B9DD91D00DE0B86 /* MilestoneRow.swift */; };
+		3C1F8A542B9DE4D800DE0B86 /* AddDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8A532B9DE4D800DE0B86 /* AddDevice.swift */; };
 		3C526F732B9D2B2300C53762 /* EcoSolutionsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */; };
 		3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F752B9D2B4100C53762 /* Helpers.swift */; };
 		3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F782B9D2B6F00C53762 /* UserViewModel.swift */; };
@@ -52,6 +53,7 @@
 		3C1F8A432B9DB99600DE0B86 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		3C1F8A472B9DBC1D00DE0B86 /* LoadingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPage.swift; sourceTree = "<group>"; };
 		3C1F8A492B9DD91D00DE0B86 /* MilestoneRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneRow.swift; sourceTree = "<group>"; };
+		3C1F8A532B9DE4D800DE0B86 /* AddDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDevice.swift; sourceTree = "<group>"; };
 		3C526F722B9D2B2300C53762 /* EcoSolutionsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EcoSolutionsData.json; sourceTree = "<group>"; };
 		3C526F752B9D2B4100C53762 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3C526F782B9D2B6F00C53762 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		3C526F7E2B9D339300C53762 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C1F8A532B9DE4D800DE0B86 /* AddDevice.swift */,
 				3C1F8A412B9DB97200DE0B86 /* MainMenu.swift */,
 				3C1F8A4B2B9DD92300DE0B86 /* User Profile */,
 				3C526FA52B9D944E00C53762 /* Leaderboard */,
@@ -350,6 +353,7 @@
 				3C526F972B9D769800C53762 /* SimpleC02EmissionsView.swift in Sources */,
 				3C526FA72B9D96A200C53762 /* Podium.swift in Sources */,
 				3C526FA92B9D992F00C53762 /* LeaderBoardRow.swift in Sources */,
+				3C1F8A542B9DE4D800DE0B86 /* AddDevice.swift in Sources */,
 				3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */,
 				3C526F7B2B9D2B8300C53762 /* User.swift in Sources */,
 				3C1F8A3F2B9DB5AF00DE0B86 /* CarComponent.swift in Sources */,
@@ -502,11 +506,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EcoSolutions/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ecory;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,11 +538,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EcoSolutions/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ecory;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
