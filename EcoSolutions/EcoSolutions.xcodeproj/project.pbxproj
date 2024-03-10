@@ -28,6 +28,8 @@
 		C38496842B9D29800046A51B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38496832B9D29800046A51B /* Preview Assets.xcassets */; };
 		C3C8C9342B9D9AC90041BD6C /* CarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9332B9D9AC90041BD6C /* CarComponent.swift */; };
 		C3C8C9362B9D9EAB0041BD6C /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9352B9D9EAB0041BD6C /* CarView.swift */; };
+		C3C8C9382B9DAA440041BD6C /* SingleCarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9372B9DAA440041BD6C /* SingleCarComponent.swift */; };
+		C3C8C93A2B9DAD9E0041BD6C /* TripRegisterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8C9392B9DAD9E0041BD6C /* TripRegisterComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		C38496832B9D29800046A51B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3C8C9332B9D9AC90041BD6C /* CarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarComponent.swift; sourceTree = "<group>"; };
 		C3C8C9352B9D9EAB0041BD6C /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		C3C8C9372B9DAA440041BD6C /* SingleCarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCarComponent.swift; sourceTree = "<group>"; };
+		C3C8C9392B9DAD9E0041BD6C /* TripRegisterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRegisterComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 				3C526F8B2B9D4E4200C53762 /* ApplianceSummaryComponent.swift */,
 				3C526F8D2B9D5A3800C53762 /* ApplianceRow.swift */,
 				C3C8C9332B9D9AC90041BD6C /* CarComponent.swift */,
+				C3C8C9372B9DAA440041BD6C /* SingleCarComponent.swift */,
+				C3C8C9392B9DAD9E0041BD6C /* TripRegisterComponent.swift */,
 			);
 			path = "Home View Components";
 			sourceTree = "<group>";
@@ -266,8 +272,10 @@
 				3C526F842B9D487200C53762 /* HomeView.swift in Sources */,
 				3C526F952B9D768700C53762 /* GraphView.swift in Sources */,
 				C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */,
+				C3C8C93A2B9DAD9E0041BD6C /* TripRegisterComponent.swift in Sources */,
 				3C526F912B9D762900C53762 /* EmissionViewModel.swift in Sources */,
 				3C526F802B9D3C9E00C53762 /* HeaderView.swift in Sources */,
+				C3C8C9382B9DAA440041BD6C /* SingleCarComponent.swift in Sources */,
 				3C526F8A2B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift in Sources */,
 				3C526F992B9D76C200C53762 /* DailyChartView.swift in Sources */,
 				C3C8C9362B9D9EAB0041BD6C /* CarView.swift in Sources */,

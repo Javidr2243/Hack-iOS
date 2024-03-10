@@ -49,7 +49,8 @@ struct CarView: View {
                             .padding()
                         }
                     }
-                        
+                    TripRegisterComponent()
+                    SingleCarComponent()
                     }
                 }
             }
@@ -73,6 +74,5 @@ struct CarView: View {
                 Item(consumo: 12.0, name: "Lavadora", iconName: "eraser", quantity: 2, smart: false)
             ]
         ),
-        // Add more categories as needed
     ])
 }
