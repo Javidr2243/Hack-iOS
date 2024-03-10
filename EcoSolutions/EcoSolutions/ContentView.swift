@@ -10,15 +10,47 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HeaderView(headerTittle: "Bienvenido Sebastian")
+            
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "powerplug")
+                    }
+                HomeView()
+                    .tabItem {
+                        Label("Car", systemImage: "car.side")
+                    }
+                HomeView()
+                    .tabItem {
+                        Label("Main Menu", systemImage: "house")
+                    }
+                HomeView()
+                    .tabItem {
+                        Label("Achievements", systemImage: "trophy")
+                    }
+                HomeView()
+                    .tabItem {
+                        Label("Profile", systemImage: "person")
+                    }
+            }
+            .background(Color("white-dark"))
+            Spacer()
         }
-        .padding()
+
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentView()
+                .previewDisplayName("Light Mode Preview")
+                .environment(\.colorScheme, .light)
+
+            ContentView()
+                .previewDisplayName("Dark Mode Preview")
+                .preferredColorScheme(.dark)
+        }
+    }
 }

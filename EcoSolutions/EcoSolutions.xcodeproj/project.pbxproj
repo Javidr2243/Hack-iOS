@@ -12,6 +12,10 @@
 		3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F782B9D2B6F00C53762 /* UserViewModel.swift */; };
 		3C526F7B2B9D2B8300C53762 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F7A2B9D2B8300C53762 /* User.swift */; };
 		3C526F7D2B9D309500C53762 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F7C2B9D309500C53762 /* MapView.swift */; };
+		3C526F802B9D3C9E00C53762 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F7F2B9D3C9E00C53762 /* HeaderView.swift */; };
+		3C526F842B9D487200C53762 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F832B9D487200C53762 /* HomeView.swift */; };
+		3C526F8A2B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F892B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift */; };
+		3C526F8C2B9D4E4200C53762 /* ApplianceSummaryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C526F8B2B9D4E4200C53762 /* ApplianceSummaryComponent.swift */; };
 		C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384967C2B9D297F0046A51B /* EcoSolutionsApp.swift */; };
 		C384967F2B9D297F0046A51B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384967E2B9D297F0046A51B /* ContentView.swift */; };
 		C38496812B9D29800046A51B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38496802B9D29800046A51B /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 		3C526F782B9D2B6F00C53762 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		3C526F7A2B9D2B8300C53762 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3C526F7C2B9D309500C53762 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3C526F7F2B9D3C9E00C53762 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3C526F832B9D487200C53762 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3C526F892B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostAndLeastUsedDevicesComponent.swift; sourceTree = "<group>"; };
+		3C526F8B2B9D4E4200C53762 /* ApplianceSummaryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplianceSummaryComponent.swift; sourceTree = "<group>"; };
 		C38496792B9D297F0046A51B /* EcoSolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoSolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C384967C2B9D297F0046A51B /* EcoSolutionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoSolutionsApp.swift; sourceTree = "<group>"; };
 		C384967E2B9D297F0046A51B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,9 +88,21 @@
 		3C526F7E2B9D339300C53762 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C526F862B9D4D7000C53762 /* Components */,
 				3C526F7C2B9D309500C53762 /* MapView.swift */,
+				3C526F7F2B9D3C9E00C53762 /* HeaderView.swift */,
+				3C526F832B9D487200C53762 /* HomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3C526F862B9D4D7000C53762 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3C526F892B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift */,
+				3C526F8B2B9D4E4200C53762 /* ApplianceSummaryComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		C38496702B9D297F0046A51B = {
@@ -193,12 +213,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C526F8C2B9D4E4200C53762 /* ApplianceSummaryComponent.swift in Sources */,
 				C384967F2B9D297F0046A51B /* ContentView.swift in Sources */,
 				3C526F7D2B9D309500C53762 /* MapView.swift in Sources */,
 				3C526F792B9D2B6F00C53762 /* UserViewModel.swift in Sources */,
 				3C526F762B9D2B4100C53762 /* Helpers.swift in Sources */,
 				3C526F7B2B9D2B8300C53762 /* User.swift in Sources */,
+				3C526F842B9D487200C53762 /* HomeView.swift in Sources */,
 				C384967D2B9D297F0046A51B /* EcoSolutionsApp.swift in Sources */,
+				3C526F802B9D3C9E00C53762 /* HeaderView.swift in Sources */,
+				3C526F8A2B9D4E2900C53762 /* MostAndLeastUsedDevicesComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
