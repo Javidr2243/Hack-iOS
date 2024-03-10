@@ -12,7 +12,7 @@ import Charts
 struct DailyEmissionsChartView: View {
     
     let emissionsData: [Emission]
-    let threshold: Double // Propiedad para el valor de la línea horizontal
+    let threshold: Double
     
     init(emissionsData: [Emission], threshold: Double) {
         self.emissionsData = emissionsData
@@ -40,10 +40,15 @@ struct DailyEmissionsChartView: View {
                 RuleMark(
                     y: .value("Threshold", threshold)
                 )
-                .foregroundStyle(.red) // Puedes cambiar el color de la línea aquí
+                .foregroundStyle(.red) // Cambia el color de la línea aquí si lo deseas
+                .lineStyle(StrokeStyle(lineWidth: 4)) // Aumenta el grosor de la línea
                 .annotation(position: .top, alignment: .trailing) {
                     Text("Umbral: \(threshold, specifier: "%.1f")")
                         .bold()
+                        .foregroundColor(.white) // Texto en blanco
+                        .padding(3)
+                        .background(Color.black.opacity(0.5)) // Fondo oscuro con opacidad ajustada
+                        .cornerRadius(4)
                 }
             }
             .chartScrollableAxes(.horizontal)

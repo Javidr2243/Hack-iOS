@@ -19,6 +19,8 @@ struct CO2EmissionsView: View {
 
     @ObservedObject var emissionsViewModel: EmissionsViewModel
     @State private var selectedTimeframe = Timeframe.weekly
+    let thresholdWeekly: Double = 200.0 // Define el umbral para el gráfico semanal
+    let thresholdMonthly: Double = 800.0 // Define el umbral para el gráfico mensual
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -35,7 +37,6 @@ struct CO2EmissionsView: View {
                 Text(" en los ultimos 90 dias")
             }.padding(.vertical)
             
-            // Dependiendo del marco de tiempo seleccionado, muestra el gráfico adecuado
             if #available(macOS 14.0, *) {
                 switch selectedTimeframe {
                 case .daily:
@@ -48,6 +49,17 @@ struct CO2EmissionsView: View {
                                 y: .value("CO2 Emissions (kg)", data.amount)
                             )
                         }
+                        RuleMark(y: .value("Threshold", thresholdWeekly))
+                            .foregroundStyle(.red)
+                            .lineStyle(StrokeStyle(lineWidth: 2))
+                            .annotation(position: .top, alignment: .trailing) {
+                                Text("Umbral: \(thresholdWeekly, specifier: "%.1f") kg")
+                                    .bold()
+                                    .foregroundColor(.white)
+                                    .padding(3)
+                                    .background(Color.black.opacity(0.5))
+                                    .cornerRadius(4)
+                            }
                     }
                 case .monthly:
                     Chart {
@@ -57,10 +69,21 @@ struct CO2EmissionsView: View {
                                 y: .value("CO2 Emissions (kg)", data.amount)
                             )
                         }
+                        RuleMark(y: .value("Threshold", thresholdMonthly))
+                            .foregroundStyle(.red)
+                            .lineStyle(StrokeStyle(lineWidth: 2))
+                            .annotation(position: .top, alignment: .trailing) {
+                                Text("Umbral: \(thresholdMonthly, specifier: "%.1f") kg")
+                                    .bold()
+                                    .foregroundColor(.white)
+                                    .padding(3)
+                                    .background(Color.black.opacity(0.5))
+                                    .cornerRadius(4)
+                            }
                     }
                 }
             } else {
-                Text("DailyEmissionsChartView is only available in macOS 14.0 or newer")
+                Text("Charts are only available in macOS 14.0 or newer")
             }
             
             Spacer()
@@ -69,7 +92,6 @@ struct CO2EmissionsView: View {
     }
 }
 
-// Aquí la vista previa usando datos de ejemplo del ViewModel
 @available(macOS 14.0, *)
 struct CO2EmissionsView_Previews: PreviewProvider {
     static var previews: some View {
