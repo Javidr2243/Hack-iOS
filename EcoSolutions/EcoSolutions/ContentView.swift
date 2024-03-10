@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab = 0
+    @State private var selectedTab = 2
     
     // Replace index 0 with actual text from User instance
-    var headerTittles = ["Bienvenido Sebastian", "Mi Hogar", "Mi Carro", "Logros", "Perfil"]
+    var headerTittles = ["Mi Hogar", "Mi Vehiculo", "Bienvenido Sebastian", "Logros", "Perfil"]
     var body: some View {
         VStack {
             HeaderView(headerTittle: headerTittles[selectedTab])
@@ -41,7 +41,22 @@ struct ContentView: View {
                     }
                     .tag(0)
                 
-                MapView()
+                CarView(applianceList: [
+                    ItemCategory(
+                        id: "Cocina",
+                        items: [
+                            Item(consumo: 10.0, name: "Estufa", iconName: "stove", quantity: 2, smart: true),
+                            Item(consumo: 15.0, name: "Licuadora", iconName: "eraser", quantity: 1, smart: false)
+                        ]
+                    ),
+                    ItemCategory(
+                        id: "Aseo",
+                        items: [
+                            Item(consumo: 8.0, name: "Aspiradora", iconName: "stove", quantity: 1, smart: true),
+                            Item(consumo: 12.0, name: "Lavadora", iconName: "eraser", quantity: 2, smart: false)
+                        ]
+                    ),
+                ])
                     .tabItem {
                         Label("Car", systemImage: "car.side")
                     }
