@@ -41,6 +41,7 @@ struct CarView: View {
                             HStack {
                                 VStack(alignment: .leading) {
                                     Text("Considera compartir viaje con un amigo para disminuir la emisión Co2")
+                                        .foregroundStyle(.black)
                                 }
                                 Spacer()
                                 Image(systemName: "chevron.right")

@@ -68,7 +68,7 @@ struct HomeView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 20)
                                 .foregroundStyle(.white)
-                                .frame(width: 100, height: 50)
+                                .frame(width: 220, height: 50)
                             
                             RoundedRectangle(cornerRadius: 20)
                                 .foregroundStyle(Color("indian-yellow"))

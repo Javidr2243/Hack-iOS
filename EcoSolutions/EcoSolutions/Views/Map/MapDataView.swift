@@ -15,12 +15,12 @@ struct MapDataView: View {
             Text("Tiempo Estimado: ")
                 .foregroundStyle(.red)
                 .bold()
-            + Text("\(time) min")
+            + Text("\(time)")
             
             Text("Distancia: ")
                 .foregroundStyle(.red)
                 .bold()
-            + Text("\(time) km")
+            + Text("\(distance)")
 
             Text("Emision Estimada de Co2: ")
                 .foregroundStyle(.red)
