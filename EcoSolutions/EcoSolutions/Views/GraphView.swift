@@ -39,7 +39,7 @@ struct CO2EmissionsView: View {
             if #available(macOS 14.0, *) {
                 switch selectedTimeframe {
                 case .daily:
-                    DailyEmissionsChartView(emissionsData: emissionsViewModel.emissionsData)
+                    DailyEmissionsChartView(emissionsData: emissionsViewModel.emissionsData, threshold: 50.0)
                 case .weekly:
                     Chart {
                         ForEach(emissionsViewModel.emissionsByWeek, id: \.week) { data in
